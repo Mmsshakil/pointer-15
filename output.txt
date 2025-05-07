@@ -1,2 +1,1 @@
-Fun function x address: 000000000061FE20
-Main function x address: 000000000061FE4C
+20
