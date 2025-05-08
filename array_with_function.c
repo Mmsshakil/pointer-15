@@ -1,19 +1,27 @@
 #include <stdio.h>
 
-void fun(int arr[])
+void fun(int arr[], int n)
 {
-    arr[1] = 200;
+
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
 }
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
-    fun(arr); // for array in function it pass by reference, that's why arr[1] will be 200
 
-    for (int i = 0; i < 5; i++)
+    int n;
+    scanf("%d", &n);
+    int arr[n];
+
+    for (int i = 0; i < n; i++)
     {
-        printf("%d ", arr[i]);
+        scanf("%d", &arr[i]);
     }
+
+    fun(arr, n);
 
     return 0;
 }
